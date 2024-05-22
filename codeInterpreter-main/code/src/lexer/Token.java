@@ -67,6 +67,10 @@ public class Token {
         return type;
     }
 
+    public void setType(TokenType type) {
+        this.type = type;
+    }
+
     public String getValue() {
         return value;
     }

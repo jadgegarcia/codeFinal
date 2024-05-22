@@ -13,12 +13,12 @@ public class Calculator {
    * Calls the Tokenizer and Parser, and returns the evaluated result of the parsed token tree
    */
   public static double getResult(String inputString) throws Exception {
-    TokenNode expressionTree = ArithParser.parseTokens(Lexer.getMathTokens(inputString));
+    TokenNode expressionTree = Parser.parseTokens(Lexer.getMathTokens(inputString));
     return evaluateExpressionTree(expressionTree);
 }
 
 public static boolean getLogicalResult(String inputString) throws Exception {
-    TokenNode expressionTree = ArithParser.parseTokens(Lexer.getMathTokens(inputString));
+    TokenNode expressionTree = Parser.parseTokens(Lexer.getMathTokens(inputString));
     return evaluateLogicalExpressionTree(expressionTree);
 }
 
@@ -65,7 +65,8 @@ private static boolean evaluateLogicalExpressionTree(TokenNode node){
         } 
     }
 }
-    private class ArithParser {
+    private class Parser
+     {
         // to iterate over all tokens in the token list passed from the lexer
         private static ListIterator<Token> tokenIter;
 

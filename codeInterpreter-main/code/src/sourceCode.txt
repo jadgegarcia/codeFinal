@@ -1,17 +1,10 @@
+# this is a sample program in CODE
 BEGIN CODE
-INT i
-WHILE ("TRUE")
-BEGIN WHILE
-DISPLAY: "Input a Number: "
-SCAN: i
-    IF ((i%3)==0)
-    BEGIN IF
-    DISPLAY: "FIZZ"
-    END IF
-    IF ((i%5)==0)
-    BEGIN IF
-    DISPLAY: "BUZZ"
-    END IF
-DISPLAY: $
-END WHILE
+INT x, y, z=5
+CHAR j='n'
+BOOL t = "TRUE"
+x=y=4
+j='c'
+# this is a comment
+DISPLAY: x & t & z & $ & j & [#] & "last"
 END CODE

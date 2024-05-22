@@ -18,11 +18,11 @@ public class Lexer {
 
         while (token.getType() != TokenType.EOF) {
             tokenList.add(token);
-            // System.out.println(token);
+            System.out.println(token);
             token = lexer.getNextToken();
         }
         tokenList.add(token);
-        // System.out.println(token);
+        System.out.println(token);
         return tokenList;
     }
 
@@ -133,7 +133,7 @@ public class Lexer {
         while (position < input.length() && (Character.isDigit(currentChar) || currentChar == '.')) {
             if (currentChar == '.') {
                 if (isFloat) {
-                            TokenUtils.error("Invalid number = " + numberBuilder.toString());
+                    TokenUtils.error("Invalid number = " + numberBuilder.toString());
                     return null;
                 }
                 isFloat = true;
