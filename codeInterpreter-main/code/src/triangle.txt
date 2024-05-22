@@ -1,0 +1,17 @@
+BEGIN CODE
+CHAR a = '*'
+int i=0,j=0
+int rows= 10
+DISPLAY: i $ j $ rows $
+WHILE (i<rows)
+BEGIN WHILE
+j=0
+    WHILE(j <=i)
+    BEGIN WHILE
+    DISPLAY: a
+    j = j+1
+    END WHILE
+DISPLAY: $
+i = i+1
+END WHILE
+END CODE
