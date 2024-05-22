@@ -18,11 +18,11 @@ public class Lexer {
 
         while (token.getType() != TokenType.EOF) {
             tokenList.add(token);
-            System.out.println(token);
+            // System.out.println(token);
             token = lexer.getNextToken();
         }
         tokenList.add(token);
-        System.out.println(token);
+        // System.out.println(token);
         return tokenList;
     }
 
