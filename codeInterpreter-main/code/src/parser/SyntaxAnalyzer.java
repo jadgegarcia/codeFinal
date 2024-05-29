@@ -351,6 +351,7 @@ public class SyntaxAnalyzer {
 
             if (tokens.size() == 1) {
                 if (tokens.get(0).getType() == TokenType.IDENTIFIER) {
+                    
                     try {
 
                         if (variables.get(tokens.get(0).getValue()).getDataType() instanceof Boolean) {
